@@ -11,13 +11,17 @@ function distanceFromHqInFeet(destinationLocation) {
 }
 
 
-function distanceTravelledInFeet(startingLocation, destinationLocation) {
+var verticalDistance = function distanceTravelledInFeet(startingLocation, destinationLocation) {
   return (Math.abs(startingLocation - destinationLocation)) * 264
 }
 
 function calculatesFarePrice(startingLocation, destinationLocation) {
   if (distanceTravelledInFeet(startingLocation, destinationLocation) < 400) {
     return 0
+  } else if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 400 && <2000 ) {
+    return
+  } else if (distanceTravelledInFeet(startingLocation, destinationLocation) > 2500) {
+    return `cannot travel that far`
   } else if (distanceTravelledInFeet(startingLocation, destinationLocation) > 2500) {
     return `cannot travel that far`
   }
