@@ -3,7 +3,7 @@ const ScuberLocation;
 const destinationLocation;
 
 function distanceFromHqInBlocks(x, y) {
-scuberLocation - destinationLocation
+return scuberLocation - destinationLocation
 }
 
 function distanceFromHqInFeet() {
