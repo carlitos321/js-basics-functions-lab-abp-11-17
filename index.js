@@ -17,7 +17,7 @@ function distanceTravelledInFeet(startingLocation, destinationLocation) {
 }
 
 function calculatesFarePrice(startingLocation, destinationLocation) {
-  if (verticalDistance < 400) {
+  if (distanceTravelledInFeet(startingLocation, destinationLocation) < 400) {
     return 0
   } else if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 400) {
     return
