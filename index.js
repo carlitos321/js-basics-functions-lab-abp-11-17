@@ -7,8 +7,7 @@ function distanceFromHqInBlocks(destinationLocation) {
 };
 
 function distanceFromHqInFeet(destinationLocation) {
-  var distanceBlocks = distanceFromHqInBlocks(destinationLocation) * 264
-  return distanceBlocks
+  return distanceFromHqInBlocks(destinationLocation) * 264
 }
 
 
