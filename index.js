@@ -7,7 +7,7 @@ return Math.abs(scuberLocation - destinationLocation)
 };
 
 function distanceFromHqInFeet(destinationLocation) {
-Math.abs((scuberLocation - destinationLocation) * 264) 
+function distanceFromHqInBlocks() * 264
 
 }
 
