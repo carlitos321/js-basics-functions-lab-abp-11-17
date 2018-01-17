@@ -18,7 +18,7 @@ var verticalDistance = function distanceTravelledInFeet(startingLocation, destin
 function calculatesFarePrice(startingLocation, destinationLocation) {
   if (distanceTravelledInFeet(startingLocation, destinationLocation) < 400) {
     return 0
-  } else if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 400 && < 2000 ) {
+  } else if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 400) {
     return
   } else if (distanceTravelledInFeet(startingLocation, destinationLocation) > 2500) {
     return `cannot travel that far`
