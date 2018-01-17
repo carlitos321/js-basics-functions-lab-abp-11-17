@@ -6,6 +6,8 @@ function distanceFromHqInBlocks(x, y) {
 return scuberLocation - destinationLocation
 }
 
+distanceFromHqInFeet();
+
 function distanceFromHqInFeet() {
 
 }
