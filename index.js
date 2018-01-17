@@ -1,5 +1,5 @@
 // Code your solution in this file!
-const ScuberLocation = 42;
+const scuberLocation = 42;
 //const destinationLocation;
 
 function distanceFromHqInBlocks(destinationLocation) {
