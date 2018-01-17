@@ -16,15 +16,28 @@ function distanceTravelledInFeet(startingLocation, destinationLocation) {
   return verticalDistance
 }
 
+// function calculatesFarePrice(startingLocation, destinationLocation) {
+//
+//   if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 2500) {
+//       return "cannot travel that far"
+//   } else if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 2000) {
+//       return 25.00
+//   } else if (distanceTravelledInFeet(startingLocation, destinationLocation) < 400) {
+//       return 0
+//   } else if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 400) {
+//       return .02 * distanceTravelledInFeet(startingLocation, destinationLocation)
+//     }
+// };
+
 function calculatesFarePrice(startingLocation, destinationLocation) {
 
-  if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 2500) {
-      return "cannot travel that far"
-  } else if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 2000) {
-      return 25.00
-  } else if (distanceTravelledInFeet(startingLocation, destinationLocation) < 400) {
+  if (distanceTravelledInFeet(startingLocation, destinationLocation) < 400) {
       return 0
-  } else if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 400) {
+  } else if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 400 && distanceTravelledInFeet(startingLocation, destinationLocation) <=2000 ) {
       return .02 * distanceTravelledInFeet(startingLocation, destinationLocation)
+  } else if (distanceTravelledInFeet(startingLocation, destinationLocation) > 2000 && distanceTravelledInFeet(startingLocation, destinationLocation) < 2500 ) {
+      return 25
+  } else if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 2500) {
+      return "cannot travel that far"
     }
 };
