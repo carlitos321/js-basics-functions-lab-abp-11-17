@@ -1,12 +1,10 @@
 // Code your solution in this file!
-const ScuberLocation;
-const destinationLocation;
+//const ScuberLocation;
+//const destinationLocation;
 
-function distanceFromHqInBlocks(x, y) {
+function distanceFromHqInBlocks(scuberLocation, destinationLocation) {
 return scuberLocation - destinationLocation
 };
-
-distanceFromHqInFeet();
 
 function distanceFromHqInFeet() {
 
