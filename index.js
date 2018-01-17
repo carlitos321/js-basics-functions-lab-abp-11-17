@@ -21,4 +21,4 @@ function calculatesFarePrice(feet) {
   } else if {
     return `cannot travle that far`
   }
-}
+};
