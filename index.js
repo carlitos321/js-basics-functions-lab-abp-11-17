@@ -11,8 +11,9 @@ function distanceFromHqInFeet(destinationLocation) {
 }
 
 
-var verticalDistance = function distanceTravelledInFeet(startingLocation, destinationLocation) {
-  return (Math.abs(startingLocation - destinationLocation)) * 264
+function distanceTravelledInFeet(startingLocation, destinationLocation) {
+  var verticalDistance = (Math.abs(startingLocation - destinationLocation)) * 264
+  return verticalDistance
 }
 
 function calculatesFarePrice(startingLocation, destinationLocation) {
