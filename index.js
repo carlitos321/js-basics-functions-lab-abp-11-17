@@ -17,20 +17,13 @@ function distanceTravelledInFeet(startingLocation, destinationLocation) {
 }
 
 function calculatesFarePrice(startingLocation, destinationLocation) {
-  if (distanceTravelledInFeet(startingLocation, destinationLocation) < 400) {
-    return 0
 
-  } else if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 400) {
-
-    return .02 * distanceTravelledInFeet(startingLocation, destinationLocation)
-
+  if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 2500) {
+      return "cannot travel that far"
   } else if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 2000) {
-
-    return 25.00
-
-  } else if (distanceTravelledInFeet(startingLocation, destinationLocation) >= 2500) {
-
-    return "cannot travel that far"
-
-  }
+      return 25.00
+  } else if (distanceTravelledInFeet(startingLocation, destinationLocation) < 400) {
+      return .02 * distanceTravelledInFeet(startingLocation, destinationLocation)
+  } else (distanceTravelledInFeet(startingLocation, destinationLocation) >= 400) {
+      return 0
 };
