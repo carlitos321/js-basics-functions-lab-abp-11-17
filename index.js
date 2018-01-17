@@ -3,14 +3,12 @@ const scuberLocation = 42;
 //const destinationLocation;
 
 function distanceFromHqInBlocks(destinationLocation) {
-return Math.abs(scuberLocation - destinationLocation)
+  return Math.abs(scuberLocation - destinationLocation)
 };
 
 function distanceFromHqInFeet(destinationLocation) {
-function distanceFromHqInBlocks () {
-  * 264
-}
-
+  var distanceBlocks = distanceFromHqInBlocks(destinationLocation) * 264
+  return distanceBlocks
 }
 
 
