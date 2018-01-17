@@ -12,7 +12,7 @@ function distanceFromHqInFeet(destinationLocation) {
 
 
 function distanceTravelledInFeet(startingLocation, destinationLocation) {
-  (Math.abs(startingLocation - destinationLocation)) * 264
+  var verticalDistance = (Math.abs(startingLocation - destinationLocation)) * 264
   return verticalDistance
 }
 
