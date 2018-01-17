@@ -16,9 +16,9 @@ function distanceTravelledInFeet(startingLocation, destinationLocation) {
 }
 
 function calculatesFarePrice(feet) {
-  if (feet < 400) {
+  if (distanceTravelledInFeet(feet) < 400) {
     return 0
-  } else if (feet > 2500) {
+  } else if (distanceTravelledInFeet(feet) > 2500) {
     return `cannot travel that far`
   }
 };
